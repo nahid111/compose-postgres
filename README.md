@@ -1,4 +1,4 @@
-# Postgresql & PgAdmin powered by compose
+# Postgresql & PgAdmin 
 
 
 ## Requirements:
@@ -35,3 +35,17 @@ This Compose file contains the following environment variables:
 * **Port** `5432`
 * **Username** as `POSTGRES_USER`, by default: `postgres`
 * **Password** as `POSTGRES_PASSWORD`, by default `changeme`
+
+## From Terminal:
+- Exec into Postgres
+```bash
+$ docker exec -it postgres_container bash
+```
+- Access postgres
+```bash
+$ psql -U postgres
+```
+- Create DB
+```bash
+$ CREATE DATABASE mytestdb;
+```
